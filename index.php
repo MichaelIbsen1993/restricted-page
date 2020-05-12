@@ -11,10 +11,10 @@
      *
      * return @string - title of statuscode.
      */
-    function getResponseCodeTitle()
+    function getResponseCodeTitle(): string
     {
         switch (http_response_code()) {
-            case 403:
+            case STATUS_CODE_FORBIDDEN:
                 return 'Forbidden';
 
             default:
